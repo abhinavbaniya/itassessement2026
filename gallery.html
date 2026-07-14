@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Verse | Gallery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .gallery{
+            width:90%;
+            max-width:1200px;
+            margin:40px auto;
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:20px;
+        }
+
+        .gallery img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+            border-radius:10px;
+            transition:0.3s;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .gallery img:hover{
+            transform:scale(1.05);
+        }
+
+        h1{
+            text-align:center;
+            margin-top:40px;
+            color:#003366;
+        }
+
+        p{
+            text-align:center;
+            margin-top:10px;
+            margin-bottom:30px;
+        }
+
+        @media(max-width:768px){
+
+            .gallery{
+                grid-template-columns:repeat(2,1fr);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <h2>Anime Verse</h2>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+
+        <li><a href="anime.html">Anime</a></li>
+
+        <li><a href="table.html">Table</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<h1>Anime Gallery</h1>
+
+<p>Click any image to view the larger version.</p>
+
+<div class="gallery">
+
+<a href="images/anime1.jpeg" target="_blank">
+<img src="images/anime1.jpeg" alt="Anime Image 1">
+</a>
+
+<a href="images/anime2.jpeg" target="_blank">
+<img src="images/anime2.jpeg" alt="Anime Image 2">
+</a>
+
+<a href="images/anime3.jpeg" target="_blank">
+<img src="images/anime3.jpeg" alt="Anime Image 3">
+</a>
+
+<a href="images/anime4.jpeg" target="_blank">
+<img src="images/anime4.jpeg" alt="Anime Image 4">
+</a>
+
+<a href="images/anime5.jpeg" target="_blank">
+<img src="images/anime5.jpeg" alt="Anime Image 5">
+</a>
+
+<a href="images/anime6.jpeg" target="_blank">
+<img src="images/anime6.jpeg" alt="Anime Image 6">
+</a>
+
+<a href="images/anime7.jpeg" target="_blank">
+<img src="images/anime7.jpeg" alt="Anime Image 7">
+</a>
+
+<a href="images/anime8.jpeg" target="_blank">
+<img src="images/anime8.jpeg" alt="Anime Image 8">
+</a>
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+<h3>Anime Verse</h3>
+
+<p>Created by Avinaw</p>
+
+<p>Kathmandu, Nepal</p>
+
+<p>
+Email:
+<a href="mailto:animeverse@gmail.com">
+animeverse@gmail.com
+</a>
+</p>
+
+<p>&copy; 2026 Anime Verse</p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
