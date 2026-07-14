@@ -1,0 +1,269 @@
+/* ==========================
+   Anime Verse Website
+   Created by Avinaw
+========================== */
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Body */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Navigation Bar */
+.navbar{
+    background:#003366;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo h2{
+    color:white;
+}
+
+/* Navigation Menu */
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:orange;
+    color:black;
+}
+
+.active{
+    background:orange;
+    color:black !important;
+}
+
+/* Banner */
+.slider{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
+}
+
+.slider img{
+    width:100%;
+    height:450px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+/* Welcome Section */
+.welcome{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    text-align:center;
+}
+
+.welcome h1{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.welcome p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Featured Cards */
+.featured{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:32%;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+/* Button */
+.button-box{
+    text-align:center;
+    margin:30px;
+}
+
+<!---- Table ----->
+.table-container{
+
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+
+        }
+
+        .table-container h1{
+
+            text-align:center;
+            color:#003366;
+            margin-bottom:15px;
+
+        }
+
+        .table-container p{
+
+            text-align:center;
+            margin-bottom:30px;
+
+        }
+
+        table{
+
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+        }
+
+        table,th,td{
+
+            border:1px solid black;
+
+        }
+
+        th{
+
+            background:#003366;
+            color:white;
+            padding:12px;
+
+        }
+
+        td{
+
+            padding:12px;
+            text-align:center;
+
+        }
+
+        .nested{
+
+            width:100%;
+
+        }
+
+        .nested th{
+
+            background:orange;
+            color:black;
+
+        }
+
+.btn{
+    display:inline-block;
+    background:orange;
+    color:black;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ff9900;
+    color:white;
+}
+
+/* Footer */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer a{
+    color:yellow;
+}
+
+footer a:hover{
+    color:white;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+
+    .featured{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    .slider img{
+        height:250px;
+    }
+
+}
